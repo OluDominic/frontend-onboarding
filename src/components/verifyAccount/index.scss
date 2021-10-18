@@ -10,4 +10,29 @@
             flex-direction: row;
         }
     }
+
+    .verify-butt {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 40px;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px){
+    .verify {
+        margin: 0px 20px;
+    
+        .verify-meth {
+            margin-top: 17px;
+    
+            .verify-account {
+                
+            }
+        }
+    
+        .verify-butt {
+            margin-top: 25px;
+        }
+    }
 }

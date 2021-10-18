@@ -15,3 +15,13 @@
     cursor: pointer;
     border: none;
 }
+
+@media only screen and (min-width: 200px) and (max-width: 900px){
+    .btn {
+        width: fit-content;
+        padding: 10px 20px;
+        right: 20px;
+        top: 20px;
+        height: 35px;
+    }
+}

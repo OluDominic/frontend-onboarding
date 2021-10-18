@@ -6,10 +6,18 @@
     padding: 10px 30px;
     width: fit-content;
     height: 50px;
-    top: 35px;
     background: #006AFF;;
     border-radius: 8px;
     color: white;
     border: none;
     cursor: pointer;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px){
+    .butt {
+        font-size: 12px;
+        padding: 10px 20px;
+        height: 40px;
+        
+    }
 }

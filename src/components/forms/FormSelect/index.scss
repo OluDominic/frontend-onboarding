@@ -1,0 +1,28 @@
+.formRow {
+    width: 100%;
+
+    select {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 17px 14px;
+        outline: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        color: black;
+        font-family: Nunito Sans;
+        border: 1px solid #E4E9EF;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px){
+    .formRow {
+        width: 100%;
+    
+        select {
+            padding: 13px 11px;
+            font-size: 12px;
+        }
+    }
+}

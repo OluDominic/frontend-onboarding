@@ -41,3 +41,65 @@
         }
     }
 }
+
+@media only screen and (min-width: 300px) and (max-width: 1000px){
+    .navi {
+
+        margin-left: 0px;
+     
+         .nav-sub {
+             
+     
+             ul {
+                 margin-top: 80px;
+                 
+             }
+     
+             ul, li {
+                 
+             }
+     
+             li {
+                 padding: 4px 4px;
+     
+     
+                 a {
+     
+                     font-family: sans-serif;
+                     font-size: 12px;
+                 }
+             }
+         }
+     }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 250px){
+    .navi {
+
+        margin-left: 0px;
+     
+         .nav-sub {
+             
+     
+             ul {
+                 margin-top: 80px;
+                 
+             }
+     
+             ul, li {
+                 
+             }
+     
+             li {
+                 padding: 4px 4px;
+     
+     
+                 a {
+     
+                     font-family: sans-serif;
+                     font-size: 11px;
+                 }
+             }
+         }
+     }
+}

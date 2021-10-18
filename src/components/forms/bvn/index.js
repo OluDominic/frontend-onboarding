@@ -9,7 +9,7 @@ import './index.scss'
 
 const Bvn =()=> {
 
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
 
     const onBar =()=> {
         setOpen(!open)
@@ -20,12 +20,16 @@ const Bvn =()=> {
             <h3>Bank Verification Number (11-digits)</h3>
             <FormInput />
 
-            <div className="bvn-sub">
+            <div style={{transform : open ? "scaleY(0.5)" : "scaleY(1)"}} className="bvn-sub">
                 <div className="bvn-icons">
                     <span className="lock"><FontAwesomeIcon icon={faLock}/> </span>
                     <h3 className="bvn-h">Why we need your BVN</h3>
-                    <span className="flexEnd"><i onClick={onBar} className={open ? 'fas fa-angle-up' : 'fas fa-angle-down'}></i></span>
+                    <span className="flexEnd"><i onClick={onBar} className={open ? 'fas fa-angle-down' : 'fas fa-angle-up'}></i></span>
                 </div>
+                
+                <TransitionGroup>
+                    <CSSTransition timeout={500} classNames="fade">
+                <div style={{transform : open ? "scale(0)" : "scale(1)"}}>
                 <div className="access"><h5>We only need access to your:</h5></div>
                 <div className="bvn-font">
                     <div className="fullname">
@@ -46,6 +50,10 @@ const Bvn =()=> {
                     <span className="faLock"><FontAwesomeIcon icon={faLock} /></span>
                     <span className="faLockWord"><h3>Your BVN does not give us access to your bank accounts or transactions.</h3></span>
                 </div>
+                </div>
+
+                    </CSSTransition>
+                </TransitionGroup>
             </div>
         </div>
     );

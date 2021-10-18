@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.scss'
 import Buttons from '../forms/Button';
 import Butt from '../forms/Butt';
+import FormSelect from '../forms/FormSelect';
 
 const BusinessCategory =()=> {
 
@@ -19,17 +20,28 @@ const BusinessCategory =()=> {
                     <div className="busCat"><h3>Business Category</h3></div>
                 </div>
                 <div className="busInput">
-                        <div className="forms-one"><div className="fors" style={{width: "80%"}}><FormInput 
-                        type="text"
+                        <div className="forms-one"><div className="fors" style={{width: "80%"}}><FormSelect 
+                        options={[
+                            {
+                                value: '',
+                                name: ''
+                            }
+                        ]}
                         />
                         {/* <label className="labels"><FontAwesomeIcon icon={faPaperclip}/></label> */}
                         </div></div>
-                        <div className="forms-two"><div className="bums" ><FormInput 
-                        type="text"
+                        <div className="forms-two"><div className="bums" ><FormSelect
+                        options={[
+                            {
+                                value: '',
+                                name: ''
+                            }
+                        ]}
                         />
                         {/* <label className="labelss"><FontAwesomeIcon icon={faPaperclip}/></label> */}
                         </div></div>
                     </div>
+                    <br />
                         <h3>Do you use POS machines for your business?</h3>
                     <div className="business-pos">
                         <br />

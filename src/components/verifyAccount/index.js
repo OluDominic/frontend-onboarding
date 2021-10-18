@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Buttons from '../forms/Button';
 import Bvn from '../forms/bvn';
+import Butt from '../forms/Butt';
 import './index.scss'
+import Account from '../account';
 
 const VerifyAccount =()=> {
 
+    const [open, setOpen] = useState(false)
+
+    const openBut =()=> {
+
+        setOpen(!open)
+    }
 
     return (
         <div className="verify">
@@ -13,11 +21,14 @@ const VerifyAccount =()=> {
             <div className="verify-meth">
                 <h3>Select a verification method</h3>
                 <div className="verify-account">
-                    <Buttons>BVN</Buttons>
-                    <Buttons>Personal Account Number</Buttons>
+                    <Buttons onClick={openBut}>BVN</Buttons>
+                    <Buttons onClick={openBut}>Personal Account Number</Buttons>
                 </div>
             </div>
-            <Bvn />
+            {/* <Bvn /> */} {open ? <Bvn /> : null}
+            {/* <Account />  */}
+            {open ? <Account /> : null}
+            <div className="verify-butt"> <Butt>Continue</Butt> </div>
         </div>
     );
 }

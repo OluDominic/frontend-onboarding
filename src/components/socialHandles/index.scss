@@ -88,3 +88,11 @@
     border: 0.5px solid #E9EEF4;
     margin-top: 100px;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 900px){
+    .socialHandles {
+        padding: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
