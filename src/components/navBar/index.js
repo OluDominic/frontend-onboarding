@@ -11,7 +11,7 @@ const NavBar =()=> {
                 <div className="nav-sub">
                     <ul>
                         <li>
-                            <NavLink to={'/'} exact activeStyle={{color: 'white', padding: "4px 7px", background: 'blue', borderRadius: '3px'}} ><span>1</span></NavLink> 
+                            <NavLink to={'/'} exact activeStyle={{color: 'white', padding: "4px 7px", background: 'blue', borderRadius: '3px', position: "static"}} ><span style={{padding: "4px 7px", background: 'grey', color: 'white', borderRadius: '3px'}}>1</span></NavLink> 
                             <NavLink to={'/'} exact activeStyle={{color: 'black'}} > Verify Account</NavLink>
                         </li>
                         <li>

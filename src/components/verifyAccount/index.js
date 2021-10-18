@@ -28,7 +28,7 @@ const VerifyAccount =()=> {
             {/* <Bvn /> */} {open ? <Bvn /> : null}
             {/* <Account />  */}
             {open ? <Account /> : null}
-            <div className="verify-butt"> <Butt>Continue</Butt> </div>
+            
         </div>
     );
 }

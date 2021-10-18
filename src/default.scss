@@ -33,6 +33,13 @@ body {
     line-height: 1;
 }
 
+.verify-butt {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    position: relative;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;

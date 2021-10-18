@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Butt from '../forms/Butt';
 import FormInput from '../forms/FormInput';
 import FormSelect from '../forms/FormSelect';
 import './index.scss'
@@ -16,8 +17,8 @@ const Account =()=> {
                     <div className="selBank"><h3>Select Bank</h3></div>
                 </div>
                 <div className="inp">
-                    <div className="inpone"><FormInput /></div>
-                    <div className="inptwo">
+                    <div className="inpone"><div style={{width: "80%"}}><FormInput /></div></div>
+                    <div  className="inptwo">
                         <FormSelect 
                         options={[
                             {
@@ -32,6 +33,7 @@ const Account =()=> {
             <br />
             <br />
             <hr className="social-line" />
+            <div className="verify-butt"> <Butt>Continue</Butt> </div>
         </div>
     );
 }

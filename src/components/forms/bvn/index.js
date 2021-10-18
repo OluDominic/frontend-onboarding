@@ -6,6 +6,7 @@ import FormInput from '../FormInput';import {
     TransitionGroup,
   } from 'react-transition-group';
 import './index.scss'
+import Butt from '../Butt';
 
 const Bvn =()=> {
 
@@ -19,7 +20,7 @@ const Bvn =()=> {
         <div className="bvn-all">
             <h3>Bank Verification Number (11-digits)</h3>
             <FormInput />
-
+            <div>
             <div style={{transform : open ? "scaleY(0.5)" : "scaleY(1)"}} className="bvn-sub">
                 <div className="bvn-icons">
                     <span className="lock"><FontAwesomeIcon icon={faLock}/> </span>
@@ -29,7 +30,8 @@ const Bvn =()=> {
                 
                 <TransitionGroup>
                     <CSSTransition timeout={500} classNames="fade">
-                <div style={{transform : open ? "scale(0)" : "scale(1)"}}>
+                        <div style={{transform : open ? "scale(0)" : "scale(1)"}}>
+                <div >
                 <div className="access"><h5>We only need access to your:</h5></div>
                 <div className="bvn-font">
                     <div className="fullname">
@@ -51,9 +53,11 @@ const Bvn =()=> {
                     <span className="faLockWord"><h3>Your BVN does not give us access to your bank accounts or transactions.</h3></span>
                 </div>
                 </div>
-
+            <div className="verify-butt"> <Butt>Continue</Butt> </div>
+            </div>
                     </CSSTransition>
                 </TransitionGroup>
+            </div>
             </div>
         </div>
     );
