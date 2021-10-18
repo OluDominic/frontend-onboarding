@@ -1,0 +1,90 @@
+.socialHandles {
+    padding: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    .first {
+        width: 40%;
+        margin: 0;
+
+        .label {
+            position: absolute;
+            margin-left: 20px;
+            top: calc(55% - 5px);
+            color: #7D8DA7;
+            font-size: 10px;
+        }
+    }
+
+    .social-sub {
+
+        .instaTwit {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            .instagram {
+                float: left;
+                width: 50%;
+                height: 100%;
+                display: block;
+            }
+
+            .twitter {
+                float: left;
+                width: 50%;
+                height: 100%;
+                display: block;
+            }
+        }
+
+        .instaInput {
+            width: 100%;
+            height: 100%;
+
+            .form-one {
+                float: left;
+                width: 50%;
+                display: block;
+
+                .for {
+
+                    .labels {
+                        position: absolute;
+            margin-left: 20px;
+            top: calc(67% - 5px);
+            color: #7D8DA7;
+            font-size: 10px;
+                    }
+                }
+            }
+
+            .form-two {
+                float: left;
+                width: 50%;
+                display: block;
+
+                .bum {
+                    .labelss {
+                        position: absolute;
+            margin-left: 20px;
+            top: calc(67% - 5px);
+            color: #7D8DA7;
+            font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .confirm {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 40px;
+    }
+}
+
+.social-line {
+    border: 0.5px solid #E9EEF4;
+    margin-top: 100px;
+}

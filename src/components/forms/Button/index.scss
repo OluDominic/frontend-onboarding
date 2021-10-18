@@ -1,0 +1,33 @@
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    outline: none;
+    font-weight: 500;
+    margin-right: 20px;
+    font-size: 14px;
+    padding: 10px 30px;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    height: 50px;
+    background: #F5F6FA;
+    border: 1px solid rgba(20, 23, 55, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: black;
+
+    &:hover {
+        background: #DCEAFF;
+        border: 1px solid #006AFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        color: black;
+    }
+    
+}
