@@ -28,45 +28,27 @@
                 float: left;
                 width: 50%;
                 display: block;
-
-                .fors {
-
-                    .labels {
-                        position: absolute;
-            margin-left: 20px;
-            top: calc(67% - 5px);
-            color: #7D8DA7;
-            font-size: 10px;
-                    }
-                }
             }
 
             .forms-two {
                 float: left;
                 width: 50%;
                 display: block;
-
-                .bums {
-                    .labelss {
-                        position: absolute;
-            margin-left: 20px;
-            top: calc(67% - 5px);
-            color: #7D8DA7;
-            font-size: 10px;
-                    }
-                }
             }
         }
 
-        .business-pos {
-
+        .business-posi {
+            margin-top: 0px;
             
-
+            .marg {
+                top: 600px;
             .yesNo {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
             }
+            }
+
         }
 
         .business-line {

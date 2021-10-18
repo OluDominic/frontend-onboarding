@@ -40,14 +40,16 @@ const BusinessCategory =()=> {
                         />
                         {/* <label className="labelss"><FontAwesomeIcon icon={faPaperclip}/></label> */}
                         </div></div>
+                        
                     </div>
-                    <br />
-                        <h3>Do you use POS machines for your business?</h3>
-                    <div className="business-pos">
+                    
+                    <div className="business-posi">
+                    <div className="marg" style={{marginTop: "50px"}}><h3>Do you use POS machines for your business?</h3>
                         <br />
                         <div className="yesNo">
                             <Buttons>Yes</Buttons>
                             <Buttons>No</Buttons>
+                        </div>
                         </div>
                     </div>
                     <hr className="business-line" />

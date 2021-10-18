@@ -53,7 +53,8 @@ const Bvn =()=> {
                     <span className="faLockWord"><h3>Your BVN does not give us access to your bank accounts or transactions.</h3></span>
                 </div>
                 </div>
-            <div className="verify-butt"> <Butt>Continue</Butt> </div>
+                <div className="verify-butt"> <Butt>Continue</Butt> </div>
+            
             </div>
                     </CSSTransition>
                 </TransitionGroup>
