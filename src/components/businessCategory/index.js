@@ -23,9 +23,17 @@ const BusinessCategory =()=> {
                         <div className="forms-one"><div className="fors" style={{width: "80%"}}><FormSelect 
                         options={[
                             {
-                                value: '',
-                                name: ''
-                            }
+                                value: 'Test 1',
+                                name: 'Test 1'
+                            },
+                            {
+                                value: 'Test 2',
+                                name: 'Test 2'
+                            },
+                            {
+                                value: 'Test 3',
+                                name: 'Test 3'
+                            },
                         ]}
                         />
                         {/* <label className="labels"><FontAwesomeIcon icon={faPaperclip}/></label> */}
@@ -33,8 +41,16 @@ const BusinessCategory =()=> {
                         <div className="forms-two"><div className="bums" ><FormSelect
                         options={[
                             {
-                                value: '',
-                                name: ''
+                                value: 'Category 1',
+                                name: 'Category 1'
+                            },
+                            {
+                                value: 'Category 2',
+                                name: 'Category 2'
+                            }, 
+                            {
+                                value: 'Category 3',
+                                name: 'Category 3'
                             }
                         ]}
                         />

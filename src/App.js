@@ -1,4 +1,4 @@
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import MainLayout from './layouts/main/mainLay';
 import BusinessCatPage from './pages/businessCatPage';
 import SocialHandPage from './pages/socialHandPage';
@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       
+     
       <Switch>
         <Route exact path="/" render={()=> (
           <MainLayout>
@@ -28,6 +29,7 @@ function App() {
           </MainLayout>
         )} 
         />
+        
       </Switch>
     </div>
   );

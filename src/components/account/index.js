@@ -22,9 +22,17 @@ const Account =()=> {
                         <FormSelect 
                         options={[
                             {
-                                value: '',
-                                name: ''
-                            }
+                                value: 'bank 1',
+                                name: 'Bank 1'
+                            },
+                            {
+                                value: 'bank 2',
+                                name: 'Bank 2'
+                            },
+                            {
+                                value: 'bank 3',
+                                name: 'Bank 3'
+                            },
                         ]}
                         />
                         </div>
