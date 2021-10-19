@@ -7,6 +7,15 @@
         font-weight: 300;
         font-family: Nunito Sans;
         border-radius: 8px;
+
+        &:focus {
+            outline: none;
+            border: 1px solid #0d6ff8;
+        }
+
+        &:hover {
+            border: 2px solid #006AFF;
+        }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 900px){

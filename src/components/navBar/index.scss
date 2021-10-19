@@ -20,23 +20,28 @@
         li {
             padding: 4px 8px;
 
-            .one {
-                padding: 3px 7px;
+            .one, .two, .three {
+                padding: 5px 11px;
                 color: white;
-                background: #A5B4CB;
-                font-family: DM Sans;
+                background: #006AFF;
+                font-family: sans-serif;
                 margin-right: 7.5px;
                 border-radius: 3px;
             }
 
+            
+
             a {
 
-                font-family: DM Sans;
+                font-family: sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 18px;
                 color: #A5B4CB;
                 text-decoration: none;
+                -webkit-transition: all .4s ease-in-out;
+                -moz-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
             }
         }
     }
@@ -102,4 +107,30 @@
              }
          }
      }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 500px){
+    .navbar-hidden {
+        visibility: hidden;
+    }
+
+    li {
+        padding: 4px 8px;
+
+        .one , two, three{
+            padding: 90px 13px;
+            color: white;
+            background: #006AFF;
+            font-family: sans-serif;
+            border-radius: 3px;
+        }
+
+        .two {
+            margin-left: -40px;
+        }
+
+        .three {
+            margin-left: -50px;
+        }
+    }
 }

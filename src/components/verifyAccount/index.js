@@ -24,9 +24,10 @@ const VerifyAccount =()=> {
                     <Buttons onClick={openBut}>BVN</Buttons>
                     <Buttons onClick={openBut}>Personal Account Number</Buttons>
                 </div>
+                
+                <br />
             </div>
-            {/* <Bvn /> */} {open ? <Bvn /> : null}
-            {/* <Account />  */}
+            {!open ? <Bvn /> : null}
             {open ? <Account /> : null}
             
         </div>

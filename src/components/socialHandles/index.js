@@ -14,6 +14,8 @@ const SocialHandles =()=> {
             <h6>Step 2/3</h6>
             <h1>Social Handles</h1>
             <h4>Enter your business social media handles</h4>
+            <br />
+            <br />
             <h3>Choose your Abeg Tag (required)</h3>
             <div>
                 <div className="first" ><FormInput 

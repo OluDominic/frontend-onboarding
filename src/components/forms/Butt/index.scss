@@ -6,11 +6,19 @@
     padding: 10px 30px;
     width: fit-content;
     height: 50px;
-    background: #006AFF;;
+    background: #006AFF;
     border-radius: 8px;
     color: white;
     border: none;
     cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        background: #0255ca;
+    }
+    
 }
 
 @media only screen and (min-width: 300px) and (max-width: 900px){
