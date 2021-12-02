@@ -1,7 +1,8 @@
 import { faLock, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react'
-import FormInput from '../FormInput';import {
+import FormInput from '../FormInput';
+import {
     CSSTransition,
     TransitionGroup,
   } from 'react-transition-group';
