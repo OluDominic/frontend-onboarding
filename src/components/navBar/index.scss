@@ -20,16 +20,31 @@
         li {
             padding: 4px 8px;
 
-            .one, .two, .three {
+            .activeOne, .activeTwo,.activeThree {
                 padding: 5px 11px;
-                color: white;
-                background: #006AFF;
+                color: #A5B4CB;
+                background: #E4E9EF;
                 font-family: sans-serif;
                 margin-right: 7.5px;
                 border-radius: 3px;
+
             }
 
-            
+            .activeTwo {
+                padding: 5px 7.5px;
+
+                .two {
+                    margin-left: 3px;
+                }
+            }
+
+            .activeThree {
+                padding: 5px 7.5px;
+
+                .three {
+                    margin-left: 3px;
+                }
+            }
 
             a {
 
