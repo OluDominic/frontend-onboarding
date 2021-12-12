@@ -132,7 +132,7 @@
     li {
         padding: 4px 8px;
 
-        .one , two, three{
+        .activeOne, .activeTwo,.activeThree{
             padding: 90px 13px;
             color: white;
             background: #006AFF;
@@ -140,15 +140,15 @@
             border-radius: 3px;
         }
 
-        .one {
+        .activeOne {
             margin-left: 7px;
         }
 
-        .two {
+        .activeTwo {
             margin-left: -46px;
         }
 
-        .three {
+        .activeThree {
             margin-left: -51px;
         }
     }
