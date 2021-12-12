@@ -7,13 +7,19 @@ import Account from '../account';
 
 const VerifyAccount =()=> {
 
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
+    const [openAcc, setOpenAcc] = useState(false);
 
     
 
     const openBut =(event)=> {
+        setOpen(true)
+        setOpenAcc(false)
+    }
 
-        setOpen(!open)
+    const openAccount =(event)=> {
+        setOpen(false)
+        setOpenAcc(true)
     }
 
     return (
@@ -24,13 +30,13 @@ const VerifyAccount =()=> {
                 <h3>Select a verification method</h3>
                 <div className="verify-account">
                     <Buttons onClick={openBut}>BVN</Buttons>
-                    <Buttons onClick={openBut}>Personal Account Number</Buttons>
+                    <Buttons onClick={openAccount}>Personal Account Number</Buttons>
                 </div>
                 
                 <br />
             </div>
             {open ? <Bvn /> : null}
-            {!open ? <Account /> : null}
+            {openAcc ? <Account /> : null}
             
         </div>
     );
